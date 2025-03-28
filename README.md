@@ -63,7 +63,7 @@ GenerateKeyFiles("public_key.asc", "private_key.asc", "info@mycompany.com", "MyS
 
 ```bash
 gpg --full-generate-key
-gpg --armor --export hudaev@domination.one > public_key.asc
-gpg --armor --export-secret-key hudaev@domination.one >  private_key.asc
+gpg --armor --export user@yourdomain.com > public_key.asc
+gpg --armor --export-secret-key user@yourdomain.com >  private_key.asc
 ```
 При генерации ключа следует выбрать метод шифрования (RSA and RSA) или (ECC (sign and encrypt)). Чтобы ключом можно было дешифровать, иначе будет только подпись сертификатом
